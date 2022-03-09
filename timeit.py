@@ -4,11 +4,12 @@ import time
 def calculate_time(func):
     def wrapper():
         time_start = time.time()    #time right before function starts
-        func()
+        temp = func()
         time_end = time.time()      #time right after function ends
         timeToRun = time_end - time_start
-        print("Seconds to run")
-        print(timeToRun)
+        string = ("Total time " + str(timeToRun))
+        print(string)
+        return temp
     return wrapper
 
 @calculate_time
