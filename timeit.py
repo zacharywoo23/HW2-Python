@@ -13,9 +13,9 @@ def calculate_time(func):
     return wrapper
 
 @calculate_time
-def test():
+def t1():
     i = 10000000
     while i > 0:
         i -= 1
 
-test()
+t1()
