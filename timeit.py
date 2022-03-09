@@ -1,7 +1,7 @@
 import time
 
 # decorator to calculate time to run a function
-def thisIsTheDecorator(func):
+def calculate_time(func):
     def wrapper():
         time_start = time.time()    #time right before function starts
         func()
@@ -11,7 +11,7 @@ def thisIsTheDecorator(func):
         print(timeToRun)
     return wrapper
 
-@thisIsTheDecorator
+@calculate_time
 def test():
     i = 10000000
     while i > 0:
