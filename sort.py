@@ -1,9 +1,5 @@
 # sort function that sorts a numerical list
 def sort_list(l: list):
-    #if input is not a list return error message
-    if not isinstance(l, list):
-        print("NOT A LIST")
-        return []
 
     n = len(l)  # length of l
     # two counter variables used for the nested while loop below
