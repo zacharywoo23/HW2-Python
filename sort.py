@@ -8,10 +8,11 @@ def sort_list(l: list):
     n = len(l)  # length of l
     # two counter variables used for the nested while loop below
     i = 0   
-    j = 0
+    
 
     # nested while loops that traverse through entire array, swapping the current element with the next element if the next element is smaller
     while i < n:
+        j = 0
         while j < (n-i-1):
             if l[j] > l[j+1]:
                 l[j], l[j+1] = l[j+1], l[j]
