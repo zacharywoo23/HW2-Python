@@ -12,12 +12,14 @@ def func_counter(method):
 def spanishGreeting():
     print("Hola amigos")
 
+# run spanishGreeting() 10 times
 x = 0
 while (x < 10):
     spanishGreeting()
     x += 1
 
+# gets number of times that spnaishGreeting() was run
 spanCount = spanishGreeting.counter
-print(spanCount)
+print(spanCount)    #prints '10'
 
 
