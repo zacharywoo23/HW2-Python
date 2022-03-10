@@ -1,10 +1,10 @@
 # decorator to track number of times a function is called
 def func_counter(method):
     def wrapper(*args, **kwargs):
-        wrapper.calls += 1  # every time a function is called, add 1 to the call counter
+        wrapper.counter += 1  # every time a function is called, add 1 to the call counter
         return method(*args, **kwargs)
 
-    wrapper.calls = 0
+    wrapper.counter = 0
     return wrapper
 
 # test the func_counter()
@@ -17,7 +17,7 @@ while (x < 10):
     spanishGreeting()
     x += 1
 
-nCalls = spanishGreeting.calls
-print(nCalls)
+spanCount = spanishGreeting.counter
+print(spanCount)
 
 
